@@ -18,5 +18,3 @@ jobs:
       run: docker build . --file Dockerfile --tag docker-polynote:$(date +%s)
       env:
         DOCKER_BUILDKIT: 1
-    - name: Cleanup
-      run: docker rmi docker-polynote:$(date +%s)
