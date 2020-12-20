@@ -3,7 +3,8 @@ name: docker polynote branch build
 on:
   push:
     branches:
-      - '*'
+      - '**' # all branches ...
+#      - '!main' # TODO: exclude main
 
 jobs:
 
