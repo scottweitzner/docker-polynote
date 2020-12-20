@@ -1,0 +1,19 @@
+name: docker polynote branch build
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+
+  build:
+
+    runs-on: debian-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag docker-polynote:$(date +%s)
+    - name: Cleanup
+      run: docker rmi docker-polynote:$(date +%s)
