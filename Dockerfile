@@ -1,5 +1,8 @@
 FROM python:3.7.9-slim-buster AS base
 
+MAINTAINER scottweitzner@gmail.com
+LABEL description="a docker image for polynote, Netflix's opensource alternative to jupyterlab"
+
 RUN apt-get update \
     && apt-get --yes --no-install-recommends install \
     wget
