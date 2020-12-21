@@ -1,4 +1,4 @@
-name: docker polynote branch build
+name: branch build
 
 on:
   push:
