@@ -1,4 +1,4 @@
-![branch workflow](https://github.com/scottweitzner/docker-polynote/workflows/docker%20polynote%20branch%20build/badge.svg)
+![branch workflow](https://github.com/scottweitzner/docker-polynote/workflows/branch%20build/badge.svg)
 
 
 # Docker Polynote
